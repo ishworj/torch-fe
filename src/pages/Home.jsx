@@ -1,11 +1,12 @@
-
-import UploadPhoto from "./UploadPhoto";
+import SearchBar from "../components/SearchBar";
+import DisplayPhotos from "./DisplayPhotos";
 
 const Home = () => {
   return (
     <>
-      
-      <UploadPhoto />
+      {/* Search Bar */}
+      <SearchBar />
+      <DisplayPhotos />
     </>
   );
 };

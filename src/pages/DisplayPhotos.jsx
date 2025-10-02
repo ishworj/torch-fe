@@ -1,10 +1,8 @@
-import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
 
-const UploadPhoto = () => {
+const DisplayPhotos = () => {
   const photos = [
     "https://picsum.photos/600/400?random=1",
     "https://picsum.photos/600/400?random=2",
@@ -16,19 +14,6 @@ const UploadPhoto = () => {
 
   return (
     <>
-      {/* Search Bar */}
-      <div className="w-100 d-flex justify-content-center py-3 ">
-        <input
-          type="text"
-          placeholder="Search your photos"
-          className="form-control w-50 rounded-pill px-3 shadow-sm"
-        />
-        <Button>Upload</Button>
-        
-      </div>
-
-      
-
       {/* Photo Grid */}
       <Container className="my-4">
         <Row className="g-4">
@@ -50,4 +35,4 @@ const UploadPhoto = () => {
   );
 };
 
-export default UploadPhoto;
+export default DisplayPhotos;
